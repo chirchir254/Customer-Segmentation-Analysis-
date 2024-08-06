@@ -1,25 +1,38 @@
 # Customer Segmentation Analysis 
 
-## Project overview 
-The customer segmentation project aims to identify distinct customer groups to enhance targeted marketing strategies. By leveraging clustering techniques on customer data, the project will uncover patterns and behaviors, enabling personalized marketing campaigns, improved customer satisfaction, and increased revenue. This data-driven approach will provide insights into customer preferences, purchasing habits, and demographic characteristics, facilitating more effective and efficient business decision-making.
+### 1. Project overview 
+This report summarizes the process and findings of a customer segmentation analysis performed using a dataset from an e-commerce platform. The analysis employs the RFM (Recency, Frequency, Monetary) model to categorize customers into distinct segments based on their purchasing behavior.
 
-## Data Sources
+### 2. Data Sources
 The project utilizes an e-commerce dataset from Kaggle, containing customer purchase history, demographics, and behavioral data, providing a comprehensive foundation for effective customer segmentation analysis.
 
-## Tools
+### 3. Tools
 - python
   
-## Data Cleaning
-In the initial data preparation phase, I performed the following tasks:
-1. Data loading and inspection
-2. Handling missing values
-3. Data cleaning and preprocessing
+### 4. Load Data & Exploratory Data Analysis (EDA)
+The initial steps involved loading the dataset and performing basic exploratory data analysis (EDA) to understand its structure and identify any missing values.
 
-## EDA
+### 5. Data Preprocessing
+Data preprocessing steps included handling missing values, converting date columns to datetime format, and calculating RFM scores for each customer.
 
-Cluster	Customer Attributes
-0	Customers in this segment have low recency, frequency, and monetary value scores. These are people who make occasional purchases and are likely to visit the platform only when they have a specific product they’d like to buy.
-1	These customers are seen making purchases often and have visited the platform recently. Their monetary value is extremely high, indicating that they spend a lot when shopping online. This could mean that users in this segment are likely to make multiple purchases in a single order and are highly responsive to cross-selling and up-selling. Resellers who purchase products in bulk could also be part of this segment.
-2	Customers in this segment have been seen making purchases very frequently in the past. However, these are people who have stopped visiting the platform for some reason and haven’t been seen shopping on the site recently. This could mean several things — they were disappointed with the service and switched to a competitor platform, they no longer have any interest in the products sold, or their customer ID changed as they re-registered onto the platform with different credentials.
-3	This cluster consists of users who are new to the platform. They have the potential to become long-term consumers with high frequency and monetary value and should be targeted with special “new-user promotions” to instill brand loyalty.
+### 6. Customer Segmentation using K-Means Clustering
+The processed data was then used to perform K-Means clustering to segment the customers.
+
+### 7. Visualizing the Segments
+The segmented data was visualized to understand the characteristics of each customer cluster.
+
+![download](https://github.com/user-attachments/assets/64890a79-3a72-4e9f-a348-1b2a53808c34)
+
+![download](https://github.com/user-attachments/assets/380dec3c-b611-4330-8730-f2d473ef7b44)
+
+![download](https://github.com/user-attachments/assets/3194ebd2-0344-4aea-a195-738618da22bd)
+
+### 8. Summary
+
+- Cluster 0: Customers with low recency, frequency, and monetary value scores. These are occasional buyers likely to visit the platform only when they have a specific need.
+- Cluster 1: Customers who make purchases often and have visited recently but have a low monetary value. These are frequent visitors who make small or few purchases each time.
+- Cluster 2: High-frequency customers with high monetary value, indicating they spend a lot when shopping. This cluster likely includes bulk purchasers or those responsive to promotions.
+- Cluster 3: New users with potential for long-term engagement. They have low monetary value and frequency but should be targeted with promotions to build brand loyalty.
+
+This analysis helps in understanding the different customer segments and tailoring marketing strategies accordingly to enhance customer engagement and sales.
 
