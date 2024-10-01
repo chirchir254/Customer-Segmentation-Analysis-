@@ -14,6 +14,12 @@ The initial steps involved loading the dataset and performing basic exploratory 
 
 ### 5. Data Preprocessing
 Data preprocessing steps included handling missing values, converting date columns to datetime format, and calculating RFM scores for each customer.
+Also outliers were removed.
+![download](https://github.com/user-attachments/assets/80b035cb-6c94-470e-b558-f6a333293c90)
+![download](https://github.com/user-attachments/assets/125080e0-46c0-4d77-8775-5ecd31565a6e)
+![download](https://github.com/user-attachments/assets/baef4aa3-7c7b-4f6d-a720-6672f5f5406d)
+ - only Recency with no visible outliers.
+ - Frequency and Monetary_value have many outliers.
 
 ### 6. Customer Segmentation using K-Means Clustering
 The processed data was then used to perform K-Means clustering to segment the customers.
