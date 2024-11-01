@@ -10,7 +10,8 @@ The project utilizes an e-commerce dataset from Kaggle, containing customer purc
 - python
   
 ### 4. Load Data & Exploratory Data Analysis (EDA)
-The initial steps involved loading the dataset and performing basic exploratory data analysis (EDA) to understand its structure and identify any missing values.
+The initial steps involved loading the dataset and performing basic exploratory data analysis (EDA) to understand its structure and identify any missing values. [Notebook](https://github.com/chirchir254/Customer-Segmentation-Analysis-/blob/main/Customer-Segmentation-Analysis.ipynb)
+
 
 ### 5. Data Preprocessing
 Data preprocessing steps included handling missing values, converting date columns to datetime format, and calculating RFM scores for each customer.
